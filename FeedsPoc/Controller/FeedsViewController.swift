@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeedsViewController.swift
 //  FeedsPoc
 //
 //  Created by Ambuj Shukla on 23/07/18.
@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class FeedsViewController: UIViewController {
+    
+    var feedsViewModel = FeedsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        self.feedsViewModel.getFeedsData { (feedsModel) in
 
+        }
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
