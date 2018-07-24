@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		11AAC224956324116BE4D194 /* Pods_FeedsPocUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D826E9D7C1EC72F61A5FA5 /* Pods_FeedsPocUITests.framework */; };
 		314D4A0E210642E6009FCE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D4A0D210642E6009FCE04 /* AppDelegate.swift */; };
-		314D4A13210642E6009FCE04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314D4A11210642E6009FCE04 /* Main.storyboard */; };
 		314D4A15210642EB009FCE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314D4A14210642EB009FCE04 /* Assets.xcassets */; };
 		314D4A18210642EB009FCE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314D4A16210642EB009FCE04 /* LaunchScreen.storyboard */; };
 		314D4A23210642EB009FCE04 /* FeedsPocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D4A22210642EB009FCE04 /* FeedsPocTests.swift */; };
@@ -19,6 +18,9 @@
 		314D4A4321064905009FCE04 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D4A4221064905009FCE04 /* Constant.swift */; };
 		314D4A4621064A13009FCE04 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D4A4521064A13009FCE04 /* FeedsViewController.swift */; };
 		314D4A4921064A5A009FCE04 /* FeedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314D4A4821064A5A009FCE04 /* FeedsViewModel.swift */; };
+		314DAD182107945C0050413E /* RowsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DAD172107945B0050413E /* RowsDataModel.swift */; };
+		314DAD1B210794A80050413E /* FeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DAD1A210794A80050413E /* FeedsTableViewCell.swift */; };
+		314DAD1E21079AA40050413E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314DAD1C21079AA40050413E /* Main.storyboard */; };
 		B2EB511469ECDFD0184A9F40 /* Pods_FeedsPoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3974F9427CF01ED87C167C6B /* Pods_FeedsPoc.framework */; };
 		FB8FA1623855AF7601ABB9A1 /* Pods_FeedsPocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA9326092B5886BC92EBA77 /* Pods_FeedsPocTests.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +49,6 @@
 		31124DF6D1B25ADB41F920AC /* Pods-FeedsPocTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedsPocTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeedsPocTests/Pods-FeedsPocTests.debug.xcconfig"; sourceTree = "<group>"; };
 		314D4A0A210642E6009FCE04 /* FeedsPoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedsPoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		314D4A0D210642E6009FCE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		314D4A12210642E6009FCE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		314D4A14210642EB009FCE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		314D4A17210642EB009FCE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		314D4A19210642EB009FCE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +63,9 @@
 		314D4A4221064905009FCE04 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		314D4A4521064A13009FCE04 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		314D4A4821064A5A009FCE04 /* FeedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModel.swift; sourceTree = "<group>"; };
+		314DAD172107945B0050413E /* RowsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowsDataModel.swift; sourceTree = "<group>"; };
+		314DAD1A210794A80050413E /* FeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsTableViewCell.swift; sourceTree = "<group>"; };
+		314DAD1D21079AA40050413E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3330F9F5E924B1B420C46AA8 /* Pods-FeedsPoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedsPoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedsPoc/Pods-FeedsPoc.release.xcconfig"; sourceTree = "<group>"; };
 		3974F9427CF01ED87C167C6B /* Pods_FeedsPoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedsPoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7085954AD557743112A60888 /* Pods-FeedsPocTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedsPocTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedsPocTests/Pods-FeedsPocTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,14 +126,15 @@
 		314D4A0C210642E6009FCE04 /* FeedsPoc */ = {
 			isa = PBXGroup;
 			children = (
+				314DAD19210794960050413E /* UITableViewCell */,
 				314D4A4721064A52009FCE04 /* FeedsViewModel */,
 				314D4A4421064A00009FCE04 /* Controller */,
 				314D4A41210648ED009FCE04 /* Utilities */,
 				314D4A3C210647C4009FCE04 /* Model */,
 				314D4A3B210647B7009FCE04 /* ViewModel */,
 				314D4A0D210642E6009FCE04 /* AppDelegate.swift */,
-				314D4A11210642E6009FCE04 /* Main.storyboard */,
 				314D4A14210642EB009FCE04 /* Assets.xcassets */,
+				314DAD1C21079AA40050413E /* Main.storyboard */,
 				314D4A16210642EB009FCE04 /* LaunchScreen.storyboard */,
 				314D4A19210642EB009FCE04 /* Info.plist */,
 			);
@@ -164,6 +169,7 @@
 		314D4A3C210647C4009FCE04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				314DAD172107945B0050413E /* RowsDataModel.swift */,
 				314D4A3D210647D9009FCE04 /* ApiManager.swift */,
 				314D4A3F21064830009FCE04 /* FeedsModel.swift */,
 			);
@@ -192,6 +198,14 @@
 				314D4A4821064A5A009FCE04 /* FeedsViewModel.swift */,
 			);
 			path = FeedsViewModel;
+			sourceTree = "<group>";
+		};
+		314DAD19210794960050413E /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				314DAD1A210794A80050413E /* FeedsTableViewCell.swift */,
+			);
+			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 		D12D51395128F0603AE1E473 /* Pods */ = {
@@ -325,9 +339,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314DAD1E21079AA40050413E /* Main.storyboard in Resources */,
 				314D4A18210642EB009FCE04 /* LaunchScreen.storyboard in Resources */,
 				314D4A15210642EB009FCE04 /* Assets.xcassets in Resources */,
-				314D4A13210642E6009FCE04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,11 +370,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FeedsPoc/Pods-FeedsPoc-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,8 +447,10 @@
 			files = (
 				314D4A4621064A13009FCE04 /* FeedsViewController.swift in Sources */,
 				314D4A3E210647D9009FCE04 /* ApiManager.swift in Sources */,
+				314DAD182107945C0050413E /* RowsDataModel.swift in Sources */,
 				314D4A4321064905009FCE04 /* Constant.swift in Sources */,
 				314D4A0E210642E6009FCE04 /* AppDelegate.swift in Sources */,
+				314DAD1B210794A80050413E /* FeedsTableViewCell.swift in Sources */,
 				314D4A4921064A5A009FCE04 /* FeedsViewModel.swift in Sources */,
 				314D4A4021064830009FCE04 /* FeedsModel.swift in Sources */,
 			);
@@ -470,20 +488,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		314D4A11210642E6009FCE04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				314D4A12210642E6009FCE04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		314D4A16210642EB009FCE04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				314D4A17210642EB009FCE04 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		314DAD1C21079AA40050413E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				314DAD1D21079AA40050413E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

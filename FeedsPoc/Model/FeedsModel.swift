@@ -8,18 +8,22 @@
 
 import Foundation
 
-struct FeedsModel: Codable {
-    
-    var title: String?
-    var rows: [Rows]
-    
-    enum CodingKeys: String, CodingKey {
-        case rows = "rows"
-    }
-}
+import ObjectMapper
 
-struct Rows: Codable {
-    var title: String?
-    var description: String?
-    var imageHref: String?
+class FeedsModel: NSObject, Mappable {
+    
+    var title : String?
+    var rows : [RowsDataModel]?
+    
+    required init?(map: Map) {
+    }
+    
+    override init() {
+        super.init()
+    }
+    
+    func mapping(map: Map) {
+        title <- map["title"]
+        rows <- map["rows"]
+    }
 }

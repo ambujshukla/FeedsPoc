@@ -7,34 +7,33 @@
 //
 
 import Foundation
+import ObjectMapper
 
 struct FeedsViewModel {
-    
+    var feedsData = FeedsModel()
 }
 
 extension FeedsViewModel {
     
     func getFeedsData(completion: @escaping ((FeedsModel) -> Void)) {
-        let apiManager = ApiManager()
-        
-        apiManager.getFeeds(methodName: "", parameters: [:], completion: { (responseData) in
-            if let jsonObject : [String : Any] = responseData.result.value as? [String : Any]{
-                let statusCode = jsonObject["result_code"] as! Bool
-                if statusCode {
-                    do {
-                        if let data = responseData.data {
-                            let decoder = JSONDecoder()
-                            let feedsModel = try decoder.decode(FeedsModel.self, from: data)
-                            completion(feedsModel)
-                        }
-                    } catch  {
-                     //   CommonUtility.showErrorCRNotifications(title: NSLocalizedString("title.error.occur", comment: "Error is shown when the json is unable to decode"), message: jsonObject["message"] as! String)
-                    }
-                }else {
-                  //  CommonUtility.showErrorCRNotifications(title: appTitle(), message: jsonObject["message"] as! String)
-                }
+        ApiManager.sharedInstance.getFeeds(methodName:"", parameters: [:], completion: { (responseData) in
+            if let resultData = Mapper<FeedsModel>().map(JSON: self.convertToDictionary(text: responseData.result.value!)! ){
+                completion(resultData)
             }
+            print("")
         }) { (error) in
+            print(error!)
         }
+    }
+    
+    func convertToDictionary(text: String) -> [String: Any]? {
+        if let data = text.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
     }
 }

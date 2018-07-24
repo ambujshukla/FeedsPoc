@@ -6,6 +6,7 @@ target 'FeedsPoc' do
   use_frameworks!
     pod 'Alamofire', '~> 4.7'
     pod 'SDWebImage', '~> 4.0'
+    pod 'ObjectMapper'
   # Pods for FeedsPoc
 
   target 'FeedsPocTests' do
