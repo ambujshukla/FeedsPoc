@@ -12,4 +12,7 @@ import UIKit
 // Server constant
 let kBaseUrl  = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
 
-let FONT_SIZE_16 : CGFloat = 16
+let kFONT_SIZE_16 : CGFloat = 16
+
+let kApp_Title = "Feeds"
+let kNetwork_Issue = "No Internet Connection. Connect your device with Internet"

@@ -16,7 +16,7 @@ class FeedsViewController: UIViewController {
     private var feedsViewModel = FeedsViewModel()
     private var tblView: UITableView!
     
-    //MARK: Adding refreshControl to show while pull to refresh done.
+    //MARK: Adding refreshControl to show while pull to refresh.
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(FeedsViewController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
@@ -47,8 +47,8 @@ class FeedsViewController: UIViewController {
             if let title = self.feedsViewModel.feedsData.title {
                 self.title = title
             }
-            self.refreshControl.endRefreshing()
         }
+        self.refreshControl.endRefreshing()
     }
     
     /* This will style the tableview with the initial configurations

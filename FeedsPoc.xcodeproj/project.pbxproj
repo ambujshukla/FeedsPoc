@@ -21,6 +21,7 @@
 		314DAD182107945C0050413E /* RowsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DAD172107945B0050413E /* RowsDataModel.swift */; };
 		314DAD1B210794A80050413E /* FeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DAD1A210794A80050413E /* FeedsTableViewCell.swift */; };
 		31FBDAF52107AB1300D6DC37 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FBDAF42107AB1300D6DC37 /* CommonUtility.swift */; };
+		31FBDAF72107B5E400D6DC37 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FBDAF62107B5E400D6DC37 /* NetworkManager.swift */; };
 		B2EB511469ECDFD0184A9F40 /* Pods_FeedsPoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3974F9427CF01ED87C167C6B /* Pods_FeedsPoc.framework */; };
 		FB8FA1623855AF7601ABB9A1 /* Pods_FeedsPocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA9326092B5886BC92EBA77 /* Pods_FeedsPocTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		314DAD172107945B0050413E /* RowsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowsDataModel.swift; sourceTree = "<group>"; };
 		314DAD1A210794A80050413E /* FeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsTableViewCell.swift; sourceTree = "<group>"; };
 		31FBDAF42107AB1300D6DC37 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
+		31FBDAF62107B5E400D6DC37 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3330F9F5E924B1B420C46AA8 /* Pods-FeedsPoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedsPoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedsPoc/Pods-FeedsPoc.release.xcconfig"; sourceTree = "<group>"; };
 		3974F9427CF01ED87C167C6B /* Pods_FeedsPoc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedsPoc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7085954AD557743112A60888 /* Pods-FeedsPocTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedsPocTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedsPocTests/Pods-FeedsPocTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				314D4A4221064905009FCE04 /* Constant.swift */,
 				31FBDAF42107AB1300D6DC37 /* CommonUtility.swift */,
+				31FBDAF62107B5E400D6DC37 /* NetworkManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				"${BUILT_PRODUCTS_DIR}/CRNotifications/CRNotifications.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -380,6 +384,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRNotifications.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +455,7 @@
 			files = (
 				31FBDAF52107AB1300D6DC37 /* CommonUtility.swift in Sources */,
 				314D4A4621064A13009FCE04 /* FeedsViewController.swift in Sources */,
+				31FBDAF72107B5E400D6DC37 /* NetworkManager.swift in Sources */,
 				314D4A3E210647D9009FCE04 /* ApiManager.swift in Sources */,
 				314DAD182107945C0050413E /* RowsDataModel.swift in Sources */,
 				314D4A4321064905009FCE04 /* Constant.swift in Sources */,

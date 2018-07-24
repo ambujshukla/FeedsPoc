@@ -13,6 +13,11 @@ import CRNotifications
 private let kActivityIndicatorWidth: CGFloat = 100.0
 private let kActivityIndicatorHeight: CGFloat = 100.0
 
+enum Cases: String {
+    case error = "Error!"
+    case sucess = "Sucess"
+}
+
 class CommonUtility: NSObject, NVActivityIndicatorViewable {
     
     /**
@@ -20,7 +25,7 @@ class CommonUtility: NSObject, NVActivityIndicatorViewable {
      */
     
     class func startLoader() {
-        let activityData = ActivityData(size: CGSize(width: kActivityIndicatorWidth, height: kActivityIndicatorHeight), message: "", messageFont: UIFont.systemFont(ofSize: FONT_SIZE_16), messageSpacing: 0, type: .ballRotateChase, color: UIColor.gray, padding: 0, displayTimeThreshold: 3, minimumDisplayTime: 1, backgroundColor:  UIColor(red: 0, green: 0, blue: 0, alpha: 0.5), textColor: UIColor.gray)
+        let activityData = ActivityData(size: CGSize(width: kActivityIndicatorWidth, height: kActivityIndicatorHeight), message: "", messageFont: UIFont.systemFont(ofSize: kFONT_SIZE_16), messageSpacing: 0, type: .ballRotateChase, color: UIColor.white, padding: 0, displayTimeThreshold: 3, minimumDisplayTime: 1, backgroundColor:  UIColor(red: 0, green: 0, blue: 0, alpha: 0.5), textColor: UIColor.gray)
         NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
     }
     
@@ -29,5 +34,10 @@ class CommonUtility: NSObject, NVActivityIndicatorViewable {
      */
     class func stopLoader() {
         NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+    }
+    
+    //This is for showing error messages in a banner from top.
+    class func showErrorCRNotifications(message : String) {
+        CRNotifications.showNotification(type: CRNotifications.error, title: Cases.error.rawValue, message: message, dismissDelay: 5)
     }
 }

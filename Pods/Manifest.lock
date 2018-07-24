@@ -5,6 +5,7 @@ PODS:
     - NVActivityIndicatorView/Presenter (= 4.2.1)
   - NVActivityIndicatorView/Presenter (4.2.1)
   - ObjectMapper (3.3.0)
+  - ReachabilitySwift (4.1.0)
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - CRNotifications
   - NVActivityIndicatorView
   - ObjectMapper
+  - ReachabilitySwift
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
@@ -22,6 +24,7 @@ SPEC REPOS:
     - CRNotifications
     - NVActivityIndicatorView
     - ObjectMapper
+    - ReachabilitySwift
     - SDWebImage
 
 SPEC CHECKSUMS:
@@ -29,8 +32,9 @@ SPEC CHECKSUMS:
   CRNotifications: 38bd824eea18b77d818e7a317253d2b475f6a241
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
 
-PODFILE CHECKSUM: 0692bd4352f6d3b27d3e313be9eed47fd04f0342
+PODFILE CHECKSUM: 7b81a9c99ba6cb3f615fc404986933378c99b226
 
 COCOAPODS: 1.5.3

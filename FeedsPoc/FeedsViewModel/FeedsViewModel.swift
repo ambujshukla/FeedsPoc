@@ -15,14 +15,14 @@ struct FeedsViewModel {
 
 extension FeedsViewModel {
     
-    func getFeedsData(completion: @escaping ((FeedsModel) -> Void)) {
+    func getFeedsData(completion: ((FeedsModel) -> Void)?) {
         ApiManager.sharedInstance.getFeeds(methodName:"", parameters: [:], completion: { (responseData) in
             if let resultData = Mapper<FeedsModel>().map(JSON: self.convertToDictionary(text: responseData.result.value!)! ){
-                completion(resultData)
+                completion!(resultData)
             }
             print("")
         }) { (error) in
-            print(error!)
+            CommonUtility.showErrorCRNotifications(message: (error?.localizedDescription)!)
         }
     }
     

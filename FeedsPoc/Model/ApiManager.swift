@@ -23,10 +23,12 @@ class ApiManager: NSObject {
     
     func callService(url: String, parameters: [String : Any], completion: @escaping ((DataResponse<String>) -> Void), failure: @escaping ((NSError?) -> Void))
     {
-        //        NetworkManager.isUnreachable { _ in
-        //            CommonUtility.showErrorCRNotifications(title: "No Internet Connection", message: "Connect your device with Internet")
-        //            return
-        //        }
+        //Here it is checking for network availability. if not present then show error.
+        NetworkManager.isUnreachable { _ in
+            CommonUtility.showErrorCRNotifications(message: kNetwork_Issue)
+            return
+        }
+        
         CommonUtility.startLoader()
         
         Alamofire.request(url, method: .post , parameters: parameters, encoding: URLEncoding.default , headers: nil).responseString {response in

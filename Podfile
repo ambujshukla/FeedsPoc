@@ -9,6 +9,7 @@ target 'FeedsPoc' do
     pod 'ObjectMapper'
     pod 'NVActivityIndicatorView'
     pod 'CRNotifications'
+    pod 'ReachabilitySwift'
   # Pods for FeedsPoc
 
   target 'FeedsPocTests' do
