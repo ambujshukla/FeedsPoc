@@ -58,6 +58,7 @@ class FeedsViewController: UIViewController {
         self.tblView.register(FeedsTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         self.tblView.delegate = self
         self.tblView.dataSource = self
+        self.tblView.tableFooterView = UIView()
         self.view.addSubview(self.tblView)
         self.tblView.addSubview(self.refreshControl)
     }

@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 // Server constant
 let kBaseUrl  = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
+
+let FONT_SIZE_16 : CGFloat = 16

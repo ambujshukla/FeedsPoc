@@ -1,5 +1,9 @@
 PODS:
   - Alamofire (4.7.2)
+  - CRNotifications (1.1.5)
+  - NVActivityIndicatorView (4.2.1):
+    - NVActivityIndicatorView/Presenter (= 4.2.1)
+  - NVActivityIndicatorView/Presenter (4.2.1)
   - ObjectMapper (3.3.0)
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
@@ -7,20 +11,26 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - CRNotifications
+  - NVActivityIndicatorView
   - ObjectMapper
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CRNotifications
+    - NVActivityIndicatorView
     - ObjectMapper
     - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  CRNotifications: 38bd824eea18b77d818e7a317253d2b475f6a241
+  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
 
-PODFILE CHECKSUM: 006cc5e98277d64d41f7ca877a0552a184eb1ee7
+PODFILE CHECKSUM: 0692bd4352f6d3b27d3e313be9eed47fd04f0342
 
 COCOAPODS: 1.5.3

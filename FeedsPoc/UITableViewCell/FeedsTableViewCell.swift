@@ -22,12 +22,6 @@ class FeedsTableViewCell: UITableViewCell {
     private let heightWidthImage:CGFloat = 40.0
     private let heightTitle:CGFloat = 25.0
     
-    //MARK: Private Method
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.selectionStyle = .none
-    }
-    
     //Init
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -70,6 +64,8 @@ class FeedsTableViewCell: UITableViewCell {
             lblDescription.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -paddingWithContent),
             
             ])
+        
+        self.selectionStyle = .none
     }
     
     required init?(coder aDecoder: NSCoder) {

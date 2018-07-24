@@ -11,17 +11,6 @@ import Alamofire
 
 class ApiManager: NSObject {
     
-//    class var  sharedApiManager: ApiManager {
-//        struct Static {
-//            static var instance : ApiManager? = nil
-//        }
-//
-//        if !(Static.instance != nil) {
-//            Static.instance = ApiManager()
-//        }
-//        return Static.instance!
-//    }
-    
     static let sharedInstance = ApiManager()
     
     func getFeeds(methodName:String, parameters: [String : Any], completion: @escaping ((DataResponse<String>) -> Void),failure: @escaping ((NSError?)) -> Void) {
@@ -38,17 +27,16 @@ class ApiManager: NSObject {
         //            CommonUtility.showErrorCRNotifications(title: "No Internet Connection", message: "Connect your device with Internet")
         //            return
         //        }
-        //        CommonUtility.startLoader()
+        CommonUtility.startLoader()
         
         Alamofire.request(url, method: .post , parameters: parameters, encoding: URLEncoding.default , headers: nil).responseString {response in
             print(response)
             if response.result.error == nil {
                 completion(response)
-                //  CommonUtility.stopLoader()
             }else {
                 failure(response.result.error as NSError?)
-                //  CommonUtility.stopLoader()
             }
+            CommonUtility.stopLoader()
         }
     }
 }

@@ -7,6 +7,8 @@ target 'FeedsPoc' do
     pod 'Alamofire', '~> 4.7'
     pod 'SDWebImage', '~> 4.0'
     pod 'ObjectMapper'
+    pod 'NVActivityIndicatorView'
+    pod 'CRNotifications'
   # Pods for FeedsPoc
 
   target 'FeedsPocTests' do
