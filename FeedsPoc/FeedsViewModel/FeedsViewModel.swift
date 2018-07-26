@@ -15,6 +15,8 @@ struct FeedsViewModel {
 
 extension FeedsViewModel {
     
+    /*weak can't be use in this block as this is struct and thus a value type. As
+      it is relevant to reference counting and only classes are reference counted.*/
     func getFeedsData(completion: ((FeedsModel) -> Void)?) {
         ApiManager.sharedInstance.getFeeds(methodName:"", parameters: [:], completion: { (responseData) in
             if let resultData = Mapper<FeedsModel>().map(JSON: self.convertToDictionary(text: responseData.result.value!)! ){

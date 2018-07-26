@@ -39,13 +39,13 @@ class FeedsViewController: UIViewController {
     //MARK: Private methods
     
     func getFeeds() {
-        self.feedsViewModel.getFeedsData { (feedsModel) in
+        self.feedsViewModel.getFeedsData { [weak self] (feedsModel) in
             if (feedsModel.rows?.count)! > 0 {
-                self.feedsViewModel.feedsData = feedsModel
-                self.tblView.reloadData()
+                self?.feedsViewModel.feedsData = feedsModel
+                self?.tblView.reloadData()
             }
-            if let title = self.feedsViewModel.feedsData.title {
-                self.title = title
+            if let title = self?.feedsViewModel.feedsData.title {
+                self?.title = title
             }
         }
         self.refreshControl.endRefreshing()
