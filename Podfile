@@ -14,6 +14,7 @@ target 'FeedsPoc' do
 
   target 'FeedsPocTests' do
     inherit! :search_paths
+    pod 'Mockingjay'
     # Pods for testing
   end
 
